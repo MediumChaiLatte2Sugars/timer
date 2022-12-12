@@ -7,7 +7,7 @@ if (arguments){
   for (let alarm of arguments){
     
     // Skip negative numbers and non-numbers
-    if (alarm < 0 || isNaN(alarm)){
+    if (Number(alarm) < 0 || isNaN(alarm)){
       continue;
     }
 
